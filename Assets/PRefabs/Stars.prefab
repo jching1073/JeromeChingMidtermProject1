@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 4408271327977157788}
   - component: {fileID: 4408271327977157791}
   - component: {fileID: 4408271327977157859}
-  - component: {fileID: 4408271327977157858}
   - component: {fileID: 4408271327977157856}
-  - component: {fileID: 4010675991857166023}
+  - component: {fileID: 6077791778782693623}
   m_Layer: 0
   m_Name: Stars
   m_TagString: Untagged
@@ -127,32 +126,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &4408271327977157858
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4408271327977157790}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.013256252, y: -0.026512861}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8125, y: 0.8125}
-    newSize: {x: 0.8125, y: 0.8125}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.52086294, y: 0.5473752}
-  m_EdgeRadius: 0
 --- !u!114 &4408271327977157856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,9 +138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1f2c00a71be97544a11942f5e0a7654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
---- !u!58 &4010675991857166023
-CircleCollider2D:
+  speed: 16
+--- !u!60 &6077791778782693623
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -175,10 +148,26 @@ CircleCollider2D:
   m_GameObject: {fileID: 4408271327977157790}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 16cf05228a4a97845afac1ffdea1005b, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.40625
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8125, y: 0.8125}
+    newSize: {x: 0.8125, y: 0.8125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.020216942, y: 0.35661674}
+      - {x: 0.016549587, y: 0.35661674}
+      - {x: -0.009183884, y: 0.34080982}
+      - {x: -0.27349138, y: -0.07966161}
+      - {x: 0.032639444, y: -0.36982107}
+      - {x: 0.32623273, y: -0.099514484}
+      - {x: 0.31630623, y: -0.064234495}
